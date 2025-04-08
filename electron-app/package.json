@@ -1,0 +1,29 @@
+{
+  "name": "doxxer-desktop",
+  "version": "1.0.0",
+  "description": "IP Logger Desktop Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . doxxer --platform=win32 --arch=x64 --out=dist/win --icon=assets/icon.ico --overwrite",
+    "package-mac": "electron-packager . doxxer --platform=darwin --arch=x64 --out=dist/mac --icon=assets/icon.icns --overwrite",
+    "package-linux": "electron-packager . doxxer --platform=linux --arch=x64 --out=dist/linux --icon=assets/icon.png --overwrite"
+  },
+  "author": "『ꪶ𝒁𝑬𝑭𝑰𝑹𝜣̸͢ꫂ 𝒜𝓵ℯ𝓂ℴ𝓷",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^22.0.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "axios": "^1.6.2",
+    "connect-pg-simple": "^8.0.0",
+    "date-fns": "^2.29.3",
+    "postgres": "^3.3.2",
+    "drizzle-orm": "^0.22.0",
+    "drizzle-zod": "^0.4.0",
+    "zod": "^3.20.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.1"
+  }
+}
